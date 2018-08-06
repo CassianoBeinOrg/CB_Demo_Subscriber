@@ -7,4 +7,7 @@ pipeline {
       }
     }
   }
+  triggers {
+    eventTrigger(event(generic('helloWorld')))
+  }
 }
