@@ -8,6 +8,6 @@ pipeline {
     }
   }
   triggers {
-    eventTrigger(simpleMatch('helloWorld'))
+    eventTrigger(simpleMatch('<username>Event'))
   }
 }
