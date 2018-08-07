@@ -8,6 +8,6 @@ pipeline {
     }
   }
   triggers {
-    eventTrigger(event(generic('helloWorld')))
+    eventTrigger(jmespathQuery('eventName==\'helloWorld\''))
   }
 }
